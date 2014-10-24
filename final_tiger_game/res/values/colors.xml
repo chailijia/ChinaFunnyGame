@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用 -->
+    <color name="transparent">#00000000</color>
+    <color name="semin_transparent">#33000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FFCCDDFF</color>
+
+    <color name="btn_default">#476A7A</color>
+    <color name="bg_default">#E9E8E3</color>
+    <color name="bg_gray">#D4D4D4</color>
+
+    <color name="loading_img_bg">#EDFAFB</color>
+    <color name="logo_text">#5A5A5A</color>
+
+    <color name="bg_option_group_border">#DBDEDE</color>
+    <color name="bg_option_group_pressed">#63B9D0</color>
+    <color name="bg_dark_gray">#787878</color>
+
+    <color name="text_timestamp">#8D8F90</color>
+    <color name="text_label">#898989</color>
+    <color name="text_shadow">#377E96</color>
+    <color name="text_toast_tips">#f0fe2253</color>
+    <color name="bg_custom_toast">#aafa6f97</color>
+    <color name="text_time">#CCCCCC</color>
+</resources>

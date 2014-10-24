@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/bg_option_group_border" />
+            <padding
+                    android:left="1dip"
+                    android:top="1dip"
+                    android:right="1dip"
+                    android:bottom="1dip" />
+            <corners android:radius="5dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/bg_option_group_pressed" />
+            <corners android:radius="6dip" />
+        </shape>
+    </item>
+</layer-list>

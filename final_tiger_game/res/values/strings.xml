@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <!-- 通用 -->
+    <string name="app_name">中国风移动电玩城</string>
+    <string name="app_name_cn">娱乐系统</string>
+    <string name="tiger_game_name">水果老虎机</string>
+    <string name="fruit_game_name">转盘水果机</string>
+    <string name="back">返回</string>
+    <string name="quit">退出</string>
+    <string name="start">开始</string>
+
+    <!-- 主列表页 -->
+    <string name="main_login_in">请先登录</string>
+    <string name="main_more_game">更多游戏敬请期待</string>
+    <string name="main_device_num">设备号</string>
+
+    <!-- 登录 -->
+    <string name="title_verify_code">输入验证码</string>
+    <string name="msg_verify_code_empty">验证码不能为空</string>
+    <string name="label_account">帐号</string>
+    <string name="hint_account">请输入号码</string>
+    <string name="label_password">密码</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="label_login">登录</string>
+    <string name="msg_login_loading">登录中，请稍候…</string>
+    <string name="msg_invalid_account">请输入正确的帐号</string>
+    <string name="msg_invalid_password">请输入正确的密码</string>
+    <string name="msg_login_success">登录成功</string>
+    <string name="label_logout">注销</string>
+
+</resources>

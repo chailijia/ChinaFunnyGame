@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/tiger_game_name"
+            android:textSize="@dimen/middle_tv_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_title"
+            android:text="？"
+            android:textSize="@dimen/middle_tv_size" />
+
+        <TextView
+            android:id="@+id/tv_num_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="1000"
+            android:textSize="@dimen/middle_tv_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_num_coin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_num_coin"
+            android:paddingTop="10dp"
+            android:text="金币："
+            android:textSize="@dimen/middle_tv_size" />
+
+        <TextView
+            android:id="@+id/tv_device_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_num_coin_title"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="No.G03"
+            android:textSize="@dimen/middle_tv_size" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/tv_device_id"
+            android:text="@string/back"
+            android:textSize="@dimen/middle_tv_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/slot_1_left_light"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/blue"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:id="@+id/slot_2_left_light"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/blue"
+                android:layout_marginTop="60dp" />
+
+            <ImageView
+                android:id="@+id/slot_3_left_light"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/blue"
+                android:layout_marginTop="60dp" />
+        </LinearLayout>
+
+        <com.tiger.wheel.widget.WheelView
+            android:id="@+id/slot_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <com.tiger.wheel.widget.WheelView
+            android:id="@+id/slot_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <com.tiger.wheel.widget.WheelView
+            android:id="@+id/slot_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/slot_1_right_light"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/blue"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:id="@+id/slot_2_right_light"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/blue"
+                android:layout_marginTop="60dp" />
+
+            <ImageView
+                android:id="@+id/slot_3_right_light"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@color/blue"
+                android:layout_marginTop="60dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_press_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投1线"
+                    android:textSize="@dimen/small_tv_size" />
+
+                <Button
+                    android:id="@+id/btn_press_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投2线"
+                    android:textSize="@dimen/small_tv_size" />
+
+                <Button
+                    android:id="@+id/btn_press_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投3线"
+                    android:textSize="@dimen/small_tv_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_press_all"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="全投"
+                android:textSize="@dimen/small_tv_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <Button
+                android:id="@+id/btn_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="@dimen/small_tv_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单线投注"
+                    android:textSize="@dimen/middle_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="@dimen/middle_tv_size" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="@dimen/small_tv_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总注额"
+                    android:textSize="@dimen/middle_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_all_times"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="@dimen/middle_tv_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="摇动"
+            android:textSize="@dimen/middle_tv_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赢得"
+                android:textSize="@dimen/middle_tv_size" />
+
+            <TextView
+                android:id="@+id/tv_all_get_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="@dimen/middle_tv_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/pwd_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="#F00"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+        
+        <Button
+            android:id="@+id/btn_stop_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="全停 "
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/btn_stop_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="A停 "
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/btn_stop_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="B停 "
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/btn_stop_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="C停 "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_mix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:text="开始 "
+            android:textSize="18sp" />
+    </LinearLayout>
+   
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:text="输入数字控制滚动结果"
+            android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/et_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:hint="A"
+            android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/et_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:hint="B "
+            android:textSize="18sp" />
+        
+        <EditText
+            android:id="@+id/et_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:hint="C "
+            android:textSize="18sp" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

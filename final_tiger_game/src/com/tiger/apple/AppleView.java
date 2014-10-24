@@ -4,11 +4,15 @@ import com.tiger.apple.DrawThread;
 import com.tiger.game.FruitGameActivity;
 
 import android.R;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.os.SystemClock;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -107,4 +111,15 @@ public class AppleView extends SurfaceView implements SurfaceHolder.Callback {
 //
 //		apple.ExitThread();
 	}
+	
+	public void exit() {
+		if (dt != null) {
+			dt.flag = false; // 停止线程的执行
+		}
+		dt = null; // 将dt指向的对象声明为垃圾
+
+		apple.ExitThread();
+	}
+	
+	
 }

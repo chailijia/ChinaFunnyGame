@@ -1,9 +1,6 @@
 package com.tiger.game;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.tiger.utils.RequestManager;
+import com.connect.util.ChinaGameManager;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,10 +20,6 @@ public class BaseActivity extends Activity{
 		super.onCreate(savedInstanceState);
 	}
 	
-	protected void executeRequest(Request<?> request) {
-		RequestManager.addRequest(request, this);
-	}
-
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onPause()
 	 */
@@ -43,7 +36,7 @@ public class BaseActivity extends Activity{
 	protected void onStop() {
 		// TODO Auto-generated method stub
 		super.onStop();
-		RequestManager.cancelAll(this);
+		ChinaGameManager.cancelAll(getApplication());
 	}
 
 	/* (non-Javadoc)

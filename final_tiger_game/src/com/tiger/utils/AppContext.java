@@ -1,5 +1,6 @@
 package com.tiger.utils;
 
+import com.connect.util.ChinaGameManager;
 import com.tiger.model.User;
 
 import android.app.Application;
@@ -65,10 +66,8 @@ public class AppContext extends Application {
 		} else {
 			user = null;
 		}
-		RequestManager.init(this);
+		ChinaGameManager.init(this);
 		phoneMode = android.os.Build.MODEL;
-		RequestManager.init(this);
-//		Configuration.init(this);
 	}
 
 	public SharedPreferences getPreferences() {

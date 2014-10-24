@@ -29,11 +29,10 @@ public class AlarmService extends Service {
 			
 		pendingIntent = PendingIntent.getBroadcast(AlarmService.this, 0, myIntent, 0);
 		
-		
 		AlarmManager manager = (AlarmManager) getSystemService(ALARM_SERVICE);
-		manager.setRepeating(AlarmManager.RTC_WAKEUP,
-				System.currentTimeMillis(), 60 *1000, pendingIntent);
+		manager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), pendingIntent);
 		
 		super.onStart(intent, startId);
 	}
+	
 }
